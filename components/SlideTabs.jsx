@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export const SlideTabsExample = () => {
+const SlideTabsExample = () => {
   return (
     <div className="py-20">
       <SlideTabs />
@@ -10,7 +10,7 @@ export const SlideTabsExample = () => {
   );
 };
 
-const SlideTabs = () => {
+export const SlideTabs = () => {
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
@@ -27,11 +27,9 @@ const SlideTabs = () => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-white bg-black p-1 font-black"
     >
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Pricing</Tab>
-      <Tab setPosition={setPosition}>Features</Tab>
-      <Tab setPosition={setPosition}>Docs</Tab>
-      <Tab setPosition={setPosition}>Blog</Tab>
+      <Tab setPosition={setPosition}>C#</Tab>
+      <Tab setPosition={setPosition}>Websites</Tab>
+      <Tab setPosition={setPosition}>Mobile Applications</Tab>
 
       <Cursor position={position} />
     </ul>

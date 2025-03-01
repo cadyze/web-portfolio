@@ -112,7 +112,7 @@ export default function TiltedCard({
 
         {displayOverlayContent && overlayContent && (
           <motion.div
-            className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]"
+            className="absolute top-0 left-0 z-[5] will-change-transform [transform:translateZ(30px)]"
           >
             {overlayContent}
           </motion.div>
@@ -121,7 +121,7 @@ export default function TiltedCard({
 
       {showTooltip && (
         <motion.figcaption
-          className="pointer-events-none absolute left-0 top-0 rounded-[4px] bg-white px-[10px] py-[4px] text-[10px] text-[#2d2d2d] opacity-0 z-[3] hidden sm:block"
+          className="pointer-events-none absolute left-2 top-0 rounded-[4px] bg-white px-[10px] py-[4px] text-[30px] text-[#2d2d2d] opacity-0 z-[10000] hidden sm:block"
           style={{
             x,
             y,
